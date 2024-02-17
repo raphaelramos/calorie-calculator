@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -19,7 +20,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { useState } from "react";
 import { Result } from "@/components/result";
 
 export default function Home() {
@@ -101,14 +101,17 @@ export default function Home() {
   }
 
   return (
-    <div className="m-8 max-w-sm mx-auto">
-      <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-        Calculadora de Calorias
+    <div className="m-4 p-4 max-w-sm mx-auto">
+      <img src="/logo.png" width="500" alt="Luck Farley logo" />
+      <h1 className="mb-4 text-3xl font-extrabold text-orange-100 dark:text-white md:text-5xl lg:text-6xl">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r to-orange-200 from-orange-300">
+          Calculadora
+        </span>{" "}
+        de Calorias
       </h1>
       <p className="mb-6 text-lg font-normal text-gray-500 dark:text-gray-400">
-        Comece por aqui à sua jornada rumo a sua transformação, se você quer:
-        eliminar gordura ou ganhar massa magra com eficiência esse é o primeiro
-        passo.
+        Comece aqui sua jornada de transformação! Dê o primeiro passo para
+        eliminar gordura ou ganhar massa magra.
       </p>
 
       <Form {...form}>
@@ -154,7 +157,7 @@ export default function Home() {
               <FormItem>
                 <FormLabel>Altura (cm)</FormLabel>
                 <FormControl>
-                  <Input {...field} />
+                  <Input type="number" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
