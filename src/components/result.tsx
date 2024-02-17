@@ -39,15 +39,13 @@ export function Result(props: ResultsCalculator) {
             <strong>{props.resultActivityNone}</strong> calorias/dia
           </p>
           <p className="pt-2">
-            Atividade fisica moderada (30 minutos de exercícios, 4 vezes na
-            semana):
+            Atividade fisica moderada (30 minutos, 3x na semana):
           </p>
           <p>
             <strong>{props.resultActivityModerate}</strong> calorias/dia
           </p>
           <p className="pt-2">
-            Atividade fisica intensa (1 hora de exercícios pelo menos 4x na
-            semana):
+            Atividade fisica intensa (1 hora pelo menos 4x na semana):
           </p>
           <p>
             <strong>{props.resultActivityIntense}</strong> calorias/dia
@@ -67,15 +65,17 @@ export function Result(props: ResultsCalculator) {
         </CardHeader>
         <CardContent>
           <p className="pb-2">
-            Agora que você já sabe seu gasto calórico, que tal receber um
-            planejamento completo pro seu objetivo, seja:
+            <strong>Emagrecer:</strong> Consumir MENOS calorias que o resultado
+            encontrado.
           </p>
           <p className="pb-2">
-            <strong>Emagrecer:</strong> Eliminar gordura corporal.
+            <strong>Ganhar massa:</strong> Consumir MAIS calorias que o
+            resultado encontrado.
           </p>
           <p>
-            <strong>Ganhar peso:</strong> Construir massa muscular de forma
-            eficiente.
+            Agora que você já sabe seu gasto calórico, que tal receber um
+            planejamento completo pro seu objetivo baseado no resultado
+            encontrado acima!
           </p>
         </CardContent>
         <CardFooter>
