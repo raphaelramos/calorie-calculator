@@ -16,18 +16,27 @@ interface ResultsCalculator {
 
 export function Result(props: ResultsCalculator) {
   return (
-    <Card className="my-8 w-[500px]">
+    <Card className="my-8">
       <CardHeader>
         <CardTitle>Sua taxa metabolica basal (TMB): {props.result}</CardTitle>
         <CardDescription>Resultado para dieta:</CardDescription>
       </CardHeader>
       <CardContent>
-        <p>Nenhuma atividade fisica: {props.resultActivityNone} calorias/dia</p>
+        <p>Nenhuma atividade fisica:</p>
         <p>
-          Atividade fisica moderada: {props.resultActivityModerate} calorias/dia
+          <strong>{props.resultActivityNone}</strong> calorias/dia
+        </p>
+        <p className="pt-2">
+          Atividade fisica moderada (30 minutos, 3x na semana):
         </p>
         <p>
-          Atividade fisica intensa: {props.resultActivityIntense} calorias/dia
+          <strong>{props.resultActivityModerate}</strong> calorias/dia
+        </p>
+        <p className="pt-2">
+          Atividade fisica intensa (1 hora pelo menos 4x na semana):
+        </p>
+        <p>
+          <strong>{props.resultActivityIntense}</strong> calorias/dia
         </p>
       </CardContent>
       <CardFooter>
