@@ -34,22 +34,22 @@ export function Result(props: ResultsCalculator) {
           <CardTitle>Seu resultado:</CardTitle>
         </CardHeader>
         <CardContent>
-          <p>Nenhuma atividade fisica:</p>
           <p>
-            <strong>{props.resultActivityNone}</strong> calorias/dia
+            <strong>Nenhuma atividade fisica:</strong>
           </p>
+          <p>{props.resultActivityNone} calorias/dia</p>
           <p className="pt-2">
-            Atividade fisica moderada (30 minutos, 3x na semana):
+            <strong>
+              Atividade fisica moderada (30 minutos, 3x na semana):
+            </strong>
           </p>
-          <p>
-            <strong>{props.resultActivityModerate}</strong> calorias/dia
-          </p>
+          <p>{props.resultActivityModerate} calorias/dia</p>
           <p className="pt-2">
-            Atividade fisica intensa (1 hora pelo menos 4x na semana):
+            <strong>
+              Atividade fisica intensa (1 hora pelo menos 4x na semana):
+            </strong>
           </p>
-          <p>
-            <strong>{props.resultActivityIntense}</strong> calorias/dia
-          </p>
+          <p>{props.resultActivityIntense} calorias/dia</p>
         </CardContent>
       </Card>
 
