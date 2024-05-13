@@ -1,6 +1,7 @@
 {
   "name": "calorie-calculator",
   "version": "0.1.0",
+  "author": "Raphael Ramos (https://raphaelramos.dev)",
   "private": true,
   "scripts": {
     "dev": "next dev",
